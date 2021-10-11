@@ -1,0 +1,36 @@
+package GastoFamiliar;
+
+import java.util.Scanner;
+
+public class exerciciogastofamiliar {
+
+	public static void main(String[] args) {
+		
+		Double totalMes = 0.0;
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("CÁLCULO MENSAL DE GASTOS FAMILIAR");
+		System.out.print("VALOR DA CONTA DE LUZ: ");
+		totalMes += scanner.nextDouble();
+		
+		System.out.print("VALOR DA ÁGUA: ");
+		totalMes += scanner.nextDouble();
+		
+		System.out.print("VALOR CONTA TELEFONE: ");
+		totalMes += scanner.nextDouble();
+		
+		System.out.print("CONTA FILHO:");
+		totalMes += scanner.nextDouble();
+		
+		System.out.print("FATURA CARTÃO: ");
+		totalMes += scanner.nextDouble();
+		
+		System.out.print("SUPERMERCADO: ");
+		totalMes += scanner.nextDouble();
+		
+		System.out.println("GASTO TOTAL É: " + totalMes);
+		
+		scanner.close();	
+	}	
+}
