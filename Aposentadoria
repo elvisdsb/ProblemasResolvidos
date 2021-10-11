@@ -1,0 +1,35 @@
+package Aposentadoria;
+
+import java.util.Scanner;
+
+public class aposentadoriaexercicio {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("APOSENTADORIA ");
+		
+		System.out.print("DIGITE SUA IDADE: ");
+		Integer idadeAtual = scanner.nextInt();
+		
+		System.out.print("DIGITE SEU TEMPO DE CONTRIBUIÇÃO: ");
+		Double tempoContribuicao = scanner.nextDouble();
+		
+		
+		Boolean idadeAposentar = idadeAtual >= 55;
+		Boolean tempo = tempoContribuicao >= 25;
+		Boolean aposentado = idadeAposentar && tempo;
+		
+		if(aposentado) {
+			System.out.println("PARABÉNS, VOCÊ TEM DIREITO A APOSENTADORIA ");
+		}
+		else {
+			System.out.println("INFELIZMENTE, VOCÊ NÃO TEM DIREITO A APOSENTADORIA ");
+		}
+		
+		scanner.close();
+		
+	}
+	
+}
