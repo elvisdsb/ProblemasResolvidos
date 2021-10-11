@@ -1,0 +1,34 @@
+package Frete;
+
+import java.util.Scanner;
+
+public class exerciciofrete {
+
+	static final Integer frete = 15;
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("CÁLCULO DE FRETE ");
+		System.out.print("DIGITE O VALOR DO PRODUTO: ");
+		Double valor = scanner.nextDouble();
+		
+		Double resultadoComFrete = valor + frete;
+		
+		Boolean precisaCobrarFrete = valor < 100;
+		
+		if (precisaCobrarFrete) {
+			System.out.println("O VALOR FINAL: " + resultadoComFrete);
+		}
+		else {
+			System.out.println("VALOR FINAL COM FRETE GRÁTIS: " + valor);
+		}
+		
+		scanner.close();
+		
+		
+	}
+	
+	
+	
+}
