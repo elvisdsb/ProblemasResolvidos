@@ -1,0 +1,36 @@
+package DescontoQuantidade;
+
+import java.util.Scanner;
+
+public class exercicio4 {
+	
+	public static void main(String[] args) {
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("DIGITE O VALOR DO PRODUTO: ");
+		Double valorProduto = scanner.nextDouble();
+		
+		System.out.print("INFORME A QUANTIDADE DO PRODUTO: ");
+		Integer quantProduto = scanner.nextInt();
+		
+		Boolean quantidade = quantProduto >= 10;
+		
+		Double desconto = 0.0;
+		
+		if (quantidade) {
+			desconto = 10.0;
+		}
+		
+		Double subTotal = valorProduto * quantProduto;
+		
+		Double valorDesconto = (subTotal * desconto) /100;
+		
+		Double valorTotal = subTotal - valorDesconto;
+		System.out.println("valor a ser pago: " + valorTotal);
+		
+		
+		scanner.close();
+		
+	}
+	
+}
