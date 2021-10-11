@@ -1,0 +1,28 @@
+public class IMC {
+
+	public static void main(String[] args) {
+		
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.println("CÁLCULO DE IMC");
+		
+		System.out.print("Digite seu peso (em Kg): ");
+		Double peso = scanner.nextDouble();
+		
+		System.out.print("Digite sua altura (em metros): ");
+		Double altura = scanner.nextDouble();
+		
+		Double alturaAoQuadrado = altura * altura;
+		
+		Double Imc = peso/alturaAoQuadrado;
+		
+		System.out.println("IMC: " + Imc);
+		
+		scanner.close();
+		
+			
+		}
+		
+		
+	}
