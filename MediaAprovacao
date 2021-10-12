@@ -1,0 +1,33 @@
+package MediaAprovacao;
+
+import java.util.Scanner;
+
+public class decisaooutraforma {
+
+	static final Integer MediaMinimaTotal = 150;
+	static final Integer NotaMinimaPortugues = 60;
+	static final Integer NotaMinimaMatematica = 60;
+		
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		System.out.print("DIGITE A NOTA DE PORTUGUÊS DE 0 A 100: ");
+		Double NotaPortugues = scanner.nextDouble();
+		
+		System.out.print("DIGITE A NOTA DE MATEMÁTICA DE 0 A 100: ");
+		Double NotaMatematica = scanner.nextDouble();
+		
+		Double Media = NotaPortugues + NotaMatematica;
+		
+		Boolean Aprovado = (Media >= MediaMinimaTotal) && (NotaPortugues >= NotaMinimaPortugues)
+				&& (NotaMatematica >= NotaMinimaMatematica);
+        
+		if(Aprovado){
+			System.out.println("PARABÉNS VOCÊ ESTÁ APROVADO COM MEDIA " + Media);
+		}else {
+			System.out.println("INFELIZMENTE VOCÊ FOI REPROVADO COM MEDIA " + Media + ". TENTE NOVAMENTE. ");
+		}
+		scanner.close();
+	}
+}
