@@ -1,0 +1,37 @@
+package Decisao;
+
+import java.util.Scanner;
+
+public class DiaSemanaComSwitch {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.print("DIGITE UM NÚMERO DE 1 A 7 PARA SABER O DIA DA SEMANA: ");
+		Integer Numero = scanner.nextInt();
+
+		String Dia;
+		
+		switch(Numero) {
+		case 1: Dia = "É DOMINGO ";
+			break;	
+		case 2: Dia = "É SEGUNDA FEIRA ";
+			break;	
+		case 3: Dia = "É TERÇA FEIRA ";
+			break;	
+		case 4: Dia = "É QUARTA FEIRA ";
+			break;	
+		case 5: Dia = "É QUINTA FEIRA ";
+			break;	
+		case 6: Dia = "É SEXTA FEIRA ";
+			break;	
+		case 7: Dia = "É SÁBADO ";
+			break;		
+		default: Dia = "NENHUM NÚMERO SE ENCAIXA NO DIA DA SEMANA.";
+		}
+		
+		System.out.println("O DIA " + Dia);
+		
+		scanner.close();
+	}
+}
