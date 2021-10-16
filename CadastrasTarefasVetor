@@ -1,0 +1,34 @@
+import java.util.Scanner;
+
+public class ExercicioCadastrarTarefas {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		System.out.println("QUAIS AS TAREFAS MAIS IMPORTANTES DO SEU DIA? ");
+		
+		System.out.print("DIGITE A PRIMEIRA TAREFA: ");
+		String tarefas = scanner.nextLine();
+		System.out.print("DIGITE A SEGUNDA TAREFA: ");
+		String tarefas2 = scanner.nextLine();
+		System.out.print("DIGITE A TERCEIRA TAREFA: ");
+		String tarefas3 = scanner.nextLine();
+		System.out.print("DIGITE A QUARTA TAREFA: ");
+		String tarefas4 = scanner.nextLine();
+		System.out.print("DIGITE A QUINTA TAREFA: ");
+		String tarefas5 = scanner.nextLine();
+		
+		String[] ConjuntoTarefas = new String[] { tarefas, tarefas2, tarefas3, 
+				tarefas4, tarefas5 };
+		
+		System.out.println("AS TAREFAS SÃO: ");
+		for(int i = 0; i < ConjuntoTarefas.length; i++) {
+			System.out.println(i + ": " + ConjuntoTarefas[i]);
+		
+}
+		scanner.close();
+}
+}
+
+//Crie um sistema onde o usuário vai cadastrar, utilizando o console, as 5 tarefas mais importantes do dia dele. 
+Armazene cada uma dessas tarefas em um vetor e, no final, imprima as tarefas novamente.
