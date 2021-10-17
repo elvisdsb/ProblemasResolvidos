@@ -10,29 +10,28 @@ public class BonificacaoFuncionario {
 		Integer mediaSalarial = 100000;
 		
 		System.out.print(" DIGITE A META DE FATURAMENTO ANUAL DA EMPRESA: ");
-		Double MetaFaturamentoAnual = scanner.nextDouble();
+		Double metaFaturamentoAnual = scanner.nextDouble();
 		
 		System.out.print("DIGITE O FATURAMENTO REAL DA EMPRESA NO ÚLTIMO ANO: ");
-		Double FaturamentoReal = scanner.nextDouble();
+		Double faturamentoReal = scanner.nextDouble();
 		
-		Double Porcentagem = 0.8;
-		Double OitentaPorcentoMediaSalarial = mediaSalarial * Porcentagem;
-		Double OitentaPorcentoMetaFaturamentoAnual = MetaFaturamentoAnual * Porcentagem;
+		Double porcentagem = 0.8;
+		Double oitentaPorcentoMediaSalarial = mediaSalarial * porcentagem;
+		Double oitentaPorcentoMetaFaturamentoAnual = metaFaturamentoAnual * porcentagem;
 		
-		if((FaturamentoReal) >= (MetaFaturamentoAnual)) {
+		if((faturamentoReal) >= (metaFaturamentoAnual)) {
 			System.out.println("PARABÉNS, VOCÊ GANHOU UM BÔNUS DE " + mediaSalarial + " REAIS. ");
 		
-		} else if (((FaturamentoReal) < (MetaFaturamentoAnual)) && 
-		(FaturamentoReal) >= OitentaPorcentoMetaFaturamentoAnual) {
-			System.out.println("PARABÉNS, VOCÊ GANHOU UM BÔNUS DE " + OitentaPorcentoMediaSalarial + " REAIS. ");
-      
+		} else if (((faturamentoReal) < (metaFaturamentoAnual)) && 
+		(faturamentoReal) >= oitentaPorcentoMetaFaturamentoAnual) {
+			System.out.println("PARABÉNS, VOCÊ GANHOU UM BÔNUS DE " + oitentaPorcentoMediaSalarial + " REAIS. ");
+		
 		}else {
 			System.out.println("INFELIZMENTE VOCÊ NÃO ATINGIU A META PARA GANHAR O BÔNUS. ");
 		}	
 		scanner.close();
-	}
+	}	
 }
-
 
 Pense em uma empresa fictícia que todo o mês de Janeiro premia seus funcionários com um bônus, caso a meta seja alcançada.
 
