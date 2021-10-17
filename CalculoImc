@@ -15,9 +15,9 @@ public class IMC {
 		
 		Double alturaAoQuadrado = altura * altura;
 		
-		Double Imc = peso/alturaAoQuadrado;
+		Double imc = peso/alturaAoQuadrado;
 		
-		System.out.println("IMC: " + Imc);
+		System.out.println("IMC: " + imc);
 		
 		scanner.close();
 		
