@@ -13,21 +13,21 @@ public class decisaooutraforma {
 		Scanner scanner = new Scanner(System.in);
 		
 		System.out.print("DIGITE A NOTA DE PORTUGUÊS DE 0 A 100: ");
-		Double NotaPortugues = scanner.nextDouble();
+		Double notaPortugues = scanner.nextDouble();
 		
 		System.out.print("DIGITE A NOTA DE MATEMÁTICA DE 0 A 100: ");
-		Double NotaMatematica = scanner.nextDouble();
+		Double notaMatematica = scanner.nextDouble();
 		
-		Double Media = NotaPortugues + NotaMatematica;
+		Double media = notaPortugues + notaMatematica;
 		
-		Boolean Aprovado = (Media >= MediaMinimaTotal) && (NotaPortugues >= NotaMinimaPortugues)
-				&& (NotaMatematica >= NotaMinimaMatematica);
-        
-		if(Aprovado){
-			System.out.println("PARABÉNS VOCÊ ESTÁ APROVADO COM MEDIA " + Media);
+		Boolean aprovado = (media >= MediaMinimaTotal) && (notaPortugues >= NotaMinimaPortugues)
+				&& (notaMatematica >= NotaMinimaMatematica);
+
+		if(aprovado){
+			System.out.println("PARABÉNS VOCÊ ESTÁ APROVADO COM MEDIA " + media);
 		}else {
-			System.out.println("INFELIZMENTE VOCÊ FOI REPROVADO COM MEDIA " + Media + ". TENTE NOVAMENTE. ");
-		}
+			System.out.println("INFELIZMENTE VOCÊ FOI REPROVADO COM MEDIA " + media + ". TENTE NOVAMENTE. ");
+		}	
 		scanner.close();
 	}
 }
