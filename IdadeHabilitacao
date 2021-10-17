@@ -14,9 +14,9 @@ static final Integer IDADE_MINIMA_PARA_TIRAR_CARTEIRA = 18;
 		System.out.print("Idade: ");
 		Integer idade = scanner.nextInt();
 		
-		Boolean TirarCarteira = idade >= IDADE_MINIMA_PARA_TIRAR_CARTEIRA;
+		Boolean tirarCarteira = idade >= IDADE_MINIMA_PARA_TIRAR_CARTEIRA;
 		
-		if (TirarCarteira) {
+		if (tirarCarteira) {
 			System.out.println("VOCÊ PODE TIRAR A CARTEIRA. ");
 		} else {
 			System.out.println("VOCÊ NÃO PODE TIRAR A CARTEIRA");
